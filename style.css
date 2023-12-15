@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  margin: 0;
+  background: #0F1115;
+}
+
+/*////////// HEADER //////////*/
+header{
+  background:#282828;
+  display: grid;
+  grid-template-columns: 60% 30% 10%;
+  min-height: fit-content;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  margin: 2em;
+  font-family: "Inter","Cambria";
+  font-size: 0.8em;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-family:'Inter','Lucida Sans' ;
+  font-size: 20px;
+}
+a,a:visited,a:active{
+  color: rgb(255, 255, 255) ;
+  transition: color 0.5s;
+}
+a:hover{
+  color: rgb(119, 228, 255);
+}
+
+#h-k-logo{
+  width:88px;
+}
+
+
+/*////////// image d'intro + nom  //////////*/
+#intro{
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat:no-repeat ;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  font-family: 'Roboto', 'Segoe UI' ;
+}
+
+#nom-container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  margin:0
+}
+
+#nom{
+  font-size: 3em;
+  font-weight: 500;
+  margin: 5px;
+}
+
+
+/*////////// BODY //////////*/
+.margin-blocks{
+  margin: 16em 0 4em 0;
+}
+
+h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background:  linear-gradient(to right, rgb(40, 40, 40), rgba(40, 40, 40, 0));
+  min-height:4em;
+  max-width: 40%;
+  padding-left: 6em;
+  color: white;
+  margin-bottom: 1em;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 36px;
+}
+
+
+/*////////// A propos de moi //////////*/
+#a-propos-container{
+  display: flex;
+  grid-template-rows: auto;
+  margin: 0 15%;
+}
+
+#img-pfp{
+  border-radius: 2em;
+  margin: 4em;
+  margin-right: 8em;
+  object-fit: contain;}
+
+#a-propos-separation{
+  content: "";
+  display: block;
+  border: 2px solid #ffffff;
+}
+
+#a-propos-texte{
+  display: flex;
+  align-items: center;
+  margin: 2em 15% 2em 5%;
+}
+
+/*////////// Mon Parcours //////////*/
+
+.parcours-block{
+  margin: 4em 15%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "lp txt";
+
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+}
+
+.logos-parcours{
+  padding: 20%;
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+}
+
+
+.part-txt-parcours{
+  grid-area: txt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.titre-parcours::before{
+  content: "\2022";
+  margin-right: 5px;
+}
+.titre-parcours{
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', 'Segoe UI';
+}
+
+.texte-parcours{
+  display: flex;
+  align-items: center;
+  line-height:1.5 ;
+}
+
+/*////////// Mes Projets //////////*/
+
+@keyframes defilement {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.gallery{
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 14px;
+}
+
+.gallery li {
+  list-style-type: none;
+  height: 300px;
+  flex-grow: 1;
+  margin: 8px;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px 2px #65b8ff12;
+}
+
+#txt-h3{
+  color: white;
+  font-family: "inter";
+  font-weight: 500;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  margin: 2em 20%;
+}
+
+#text-portfolio{
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  margin: 2em 20%;
+}
+
+footer{
+  background: #282828;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:80px;
+}
+
+footer ul{
+  display: flex;
+  list-style-type: none; 
+}
+
+footer li {
+  margin: auto 1em;
+}
+footer p {
+  font-family: 'Inter','Lucida Sans';
+  font-size: 20px;
+}
+
+p{
+  margin: 0 1em;
+  color: white;
+  font-family: 'Inter','Lucida Sans';
+  font-size: 1.5em;
+  letter-spacing: -0.4px;
+}
+
